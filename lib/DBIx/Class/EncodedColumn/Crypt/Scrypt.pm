@@ -50,7 +50,7 @@ DBIx::Class::EncodedColumn::Crypt::Scrypt - scrypt support for DBIx::Class::Enco
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -60,6 +60,8 @@ version 0.002
           encode_column       => 1,
           encode_class        => 'Crypt::Scrypt',
           encode_args         => {
+              cost  => 10,
+              keysz => 64
           },
           encode_check_method => 'check_password',
       }
@@ -109,33 +111,6 @@ is typically used for password authentication.
 =head1 SEE ALSO
 
 L<DBIx::Class::EncodedColumn>
-
-=head1 AUTHOR
-
-Forest Belton (fbelton) <forest@homolo.gy>
-
-=head1 LICENSE
-
-Copyright (c) 2014 Forest Belton
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 =head1 AUTHOR
 

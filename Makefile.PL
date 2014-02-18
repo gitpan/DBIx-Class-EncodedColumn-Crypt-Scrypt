@@ -21,6 +21,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "mit",
   "NAME" => "DBIx::Class::EncodedColumn::Crypt::Scrypt",
   "PREREQ_PM" => {
+    "Bytes::Random::Secure" => "0.28",
     "Crypt::ScryptKDF" => "0.008",
     "DBIx::Class::EncodedColumn" => "0.00012",
     "Dir::Self" => "0.11",
@@ -28,7 +29,7 @@ my %WriteMakefileArgs = (
     "Test::Simple" => "1.001002"
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -36,6 +37,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Bytes::Random::Secure" => "0.28",
   "Crypt::ScryptKDF" => "0.008",
   "DBIx::Class::EncodedColumn" => "0.00012",
   "Dir::Self" => "0.11",
