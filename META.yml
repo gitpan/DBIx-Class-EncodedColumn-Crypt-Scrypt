@@ -19,4 +19,4 @@ requires:
   Dir::Self: 0.11
   File::Spec: 3.40
   Test::Simple: 1.001002
-version: 0.003
+version: 0.004

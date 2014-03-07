@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution DBIx-Class-EncodedColumn-Crypt-Scrypt,
-version 0.003:
+version 0.004:
 
   scrypt support for DBIx::Class::EncodedColumn
 
